@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cotizador de Seguros</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <header>
+        <img src="./img/logo.png" alt="Logo la Ideal" width="250" height="250">
+    </header>
+    <main>
+        <section id="formulario">
+            <h2>Completa el formulario</h2>
+            <form id="cotizacion-form">
+                <label for="tipo-seguro">Tipo de Seguro:</label>
+                <select id="tipo-seguro" name="tipo-seguro">
+                    <option value="auto">Seguro de Auto</option>
+                    <option value="hogar">Seguro de Hogar</option>
+                    <option value="vida">Seguro de Vida</option>
+                </select>
+
+                <label for="edad">Edad:</label>
+                <input type="number" id="edad" name="edad" required>
+
+                <label for="cobertura">Cobertura:</label>
+                <input type="radio" id="cobertura-basica" name="cobertura" value="basica" checked>
+                <label for="cobertura-basica">Básica</label>
+                <input type="radio" id="cobertura-completa" name="cobertura" value="completa">
+                <label for="cobertura-completa">Completa</label>
+
+                <button type="button" id="obtener-cotizacion">Obtener Cotización</button>
+            </form>
+        </section>
+
+        <section id="resultado">
+            <h2>Resultado de la Cotización</h2>
+            <div id="cotizacion">
+                
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Seguros La Ideal</p>
+    </footer>
+    <script src="./main.js"></script>
+</body>
+</html>
